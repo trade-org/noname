@@ -6,12 +6,20 @@ const Category = () => {
     <div>
       <Tabs isFitted variant="enclosed">
         <TabList mb="1em">
-          <Tab>One</Tab>
-          <Tab>Two</Tab>
+          <Tab>All Category</Tab>
+          <Tab>Accessories</Tab>
+          <Tab>Fashion</Tab>
+          <Tab>Cars</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
             <p>one!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
+          </TabPanel>
+          <TabPanel>
+            <p>two!</p>
           </TabPanel>
           <TabPanel>
             <p>two!</p>
