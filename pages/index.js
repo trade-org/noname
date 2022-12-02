@@ -3,7 +3,7 @@ import Homepage from './Homepage'
 
 export default function Home() {
   return (
-   <Box  w={"100%"} minH={"100vh"} bg={"#181819"} color={"white"}>
+   <Box  w={"100%"} minH={"150vh"} bg={"black"} color={"white"}>
        <Homepage />
 
    </Box>
