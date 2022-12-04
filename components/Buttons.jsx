@@ -1,7 +1,7 @@
 import { Text, Button } from "@chakra-ui/react";
 import React from "react";
 
-const Buttons = ({ name, showModal }) => {
+const Buttons = ({ name }) => {
   return (
     <Button
       border={"none"}
