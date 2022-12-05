@@ -1,10 +1,20 @@
-import { Box, Flex, Input, Text } from "@chakra-ui/react";
-import React from "react";
-import Buttons from "./Buttons";
+import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import React, { useState } from "react";
+import ButtonComponent from "./ButtonComponent";
+import LoginModal from "./LoginModal";
+import SignUp from "./SignUp";
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [showSignUpModal, setShowSignUpModal] = useState(false);
+  const closeModal = () => {
+    setShowModal(false);
+    setShowSignUpModal(false);
+  };
   return (
     <>
+      <LoginModal showModal={showModal} closeModal={closeModal} />
+      <SignUp showSignUpModal={showSignUpModal} closeModal={closeModal} />
       <Flex
         justify={["center", "space-between"]}
         p={["0px", "25px"]}
@@ -20,8 +30,14 @@ const Navbar = () => {
           />
         </Box>
         <Flex gap={["10px", "20px"]}>
-          <Buttons name={"Log In"} />
-          <Buttons name={"Start Selling"} />
+          <ButtonComponent
+            onClick={() => setShowModal(!showModal)}
+            name={"Log In"}
+          />
+          <ButtonComponent
+            onClick={() => setShowSignUpModal(!showSignUpModal)}
+            name={"Start Selling"}
+          />
         </Flex>
       </Flex>
     </>
