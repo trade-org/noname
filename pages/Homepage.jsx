@@ -8,7 +8,7 @@ const Homepage = () => {
     <div>
       <Navbar />
       <MainSection />
-      <Category />
+      {/* <Category /> */}
     </div>
   );
 };
