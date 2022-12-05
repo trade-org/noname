@@ -34,9 +34,6 @@ const LoginModal = ({ showModal, closeModal }) => {
           borderRadius={"10px"}
         >
           <Flex align={"center"} justify={"space-between"} w={"100%"}>
-            {/* <Text fontSize={"1.5rem"} onClick={() => setShowModal(true)}>
-              Add Project
-            </Text> */}
             <Button
               bg={"blue.600"}
               _hover={{
